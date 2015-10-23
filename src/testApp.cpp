@@ -31,6 +31,8 @@ void testApp::setup(){
 	ofSetVerticalSync(true);
 	//ofSetFrameRate(60);
 
+    ofLogNotice() << "Running app";
+    
 	ofBackground(255,0,130);
 
     buttonState = "digital pin:";
