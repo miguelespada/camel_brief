@@ -10,6 +10,9 @@ void App::keyPressed (int key){
         case 'n':
             current_state->next();
             break;
+        case 'c':
+            Assets::getInstance()->testSound.play();
+            break;
         
         default:
             break;

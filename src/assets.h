@@ -17,6 +17,7 @@ public:
     
     
     ofVideoPlayer myVideo;
+    ofSoundPlayer testSound;
 };
 
 #endif
