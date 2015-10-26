@@ -7,16 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		29D734F0DDECC8C5978185D7 /* testApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00A1BFCBB38848AD0E0C8539 /* testApp.cpp */; };
-		49A26DC61BDA65AD00C1FA79 /* standbyState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49A26DC41BDA65AD00C1FA79 /* standbyState.cpp */; };
-		49A26DCC1BDA65D700C1FA79 /* app.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49A26DCA1BDA65D700C1FA79 /* app.cpp */; };
-		49A26DDC1BDA674F00C1FA79 /* assets.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49A26DDA1BDA674F00C1FA79 /* assets.cpp */; };
-		49A26DDE1BDA69B400C1FA79 /* baseState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49A26DD51BDA667B00C1FA79 /* baseState.cpp */; };
-		49A26DDF1BDA69C200C1FA79 /* baseApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49A26DD11BDA667B00C1FA79 /* baseApp.cpp */; };
-		49A26DE01BDA69E500C1FA79 /* singletonAssets.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49A26DD91BDA667B00C1FA79 /* singletonAssets.cpp */; };
-		49A26DE11BDA69E800C1FA79 /* baseAssets.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49A26DD31BDA667B00C1FA79 /* baseAssets.cpp */; };
-		49A26DE41BDA6A3100C1FA79 /* runningState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49A26DE21BDA6A3100C1FA79 /* runningState.cpp */; };
-		49A26DE81BDA6B7700C1FA79 /* arduino.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49A26DE61BDA6B7700C1FA79 /* arduino.cpp */; };
+		49378C021BDE562800418002 /* app.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49378BEE1BDE562800418002 /* app.cpp */; };
+		49378C031BDE562800418002 /* arduino.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49378BF01BDE562800418002 /* arduino.cpp */; };
+		49378C041BDE562800418002 /* assets.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49378BF21BDE562800418002 /* assets.cpp */; };
+		49378C051BDE562800418002 /* baseApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49378BF41BDE562800418002 /* baseApp.cpp */; };
+		49378C061BDE562800418002 /* baseAssets.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49378BF61BDE562800418002 /* baseAssets.cpp */; };
+		49378C071BDE562800418002 /* baseState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49378BF81BDE562800418002 /* baseState.cpp */; };
+		49378C081BDE562800418002 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49378BFA1BDE562800418002 /* main.cpp */; };
+		49378C091BDE562800418002 /* runningState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49378BFB1BDE562800418002 /* runningState.cpp */; };
+		49378C0A1BDE562800418002 /* singletonAssets.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49378BFD1BDE562800418002 /* singletonAssets.cpp */; };
+		49378C0B1BDE562800418002 /* standbyState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49378BFE1BDE562800418002 /* standbyState.cpp */; };
+		49378C0C1BDE562800418002 /* testApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49378C001BDE562800418002 /* testApp.cpp */; };
 		BBAB23CB13894F3D00AA2426 /* GLUT.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BBAB23BE13894E4700AA2426 /* GLUT.framework */; };
 		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
 		E45BE97B0E8CC7DD009D7055 /* AGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9710E8CC7DD009D7055 /* AGL.framework */; };
@@ -27,7 +28,6 @@
 		E45BE9810E8CC7DD009D7055 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9770E8CC7DD009D7055 /* CoreServices.framework */; };
 		E45BE9830E8CC7DD009D7055 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9790E8CC7DD009D7055 /* OpenGL.framework */; };
 		E45BE9840E8CC7DD009D7055 /* QuickTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE97A0E8CC7DD009D7055 /* QuickTime.framework */; };
-		E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1D0A3A1BDC003C02F2 /* main.cpp */; };
 		E4C2424710CC5A17004149E2 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C2424410CC5A17004149E2 /* AppKit.framework */; };
 		E4C2424810CC5A17004149E2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C2424510CC5A17004149E2 /* Cocoa.framework */; };
 		E4C2424910CC5A17004149E2 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C2424610CC5A17004149E2 /* IOKit.framework */; };
@@ -68,25 +68,26 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		00A1BFCBB38848AD0E0C8539 /* testApp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = testApp.cpp; path = src/testApp.cpp; sourceTree = SOURCE_ROOT; };
-		2D129AB0F7D46B8DFCEADEDB /* testApp.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = testApp.h; path = src/testApp.h; sourceTree = SOURCE_ROOT; };
-		49A26DC41BDA65AD00C1FA79 /* standbyState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = standbyState.cpp; sourceTree = "<group>"; };
-		49A26DC51BDA65AD00C1FA79 /* standbyState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = standbyState.h; sourceTree = "<group>"; };
-		49A26DCA1BDA65D700C1FA79 /* app.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = app.cpp; sourceTree = "<group>"; };
-		49A26DCB1BDA65D700C1FA79 /* app.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = app.h; sourceTree = "<group>"; };
-		49A26DD11BDA667B00C1FA79 /* baseApp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = baseApp.cpp; sourceTree = "<group>"; };
-		49A26DD21BDA667B00C1FA79 /* baseApp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = baseApp.h; sourceTree = "<group>"; };
-		49A26DD31BDA667B00C1FA79 /* baseAssets.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = baseAssets.cpp; sourceTree = "<group>"; };
-		49A26DD41BDA667B00C1FA79 /* baseAssets.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = baseAssets.h; sourceTree = "<group>"; };
-		49A26DD51BDA667B00C1FA79 /* baseState.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = baseState.cpp; sourceTree = "<group>"; };
-		49A26DD61BDA667B00C1FA79 /* baseState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = baseState.h; sourceTree = "<group>"; };
-		49A26DD91BDA667B00C1FA79 /* singletonAssets.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = singletonAssets.cpp; sourceTree = "<group>"; };
-		49A26DDA1BDA674F00C1FA79 /* assets.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = assets.cpp; path = baseFiles/assets.cpp; sourceTree = "<group>"; };
-		49A26DDB1BDA674F00C1FA79 /* assets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = assets.h; path = baseFiles/assets.h; sourceTree = "<group>"; };
-		49A26DE21BDA6A3100C1FA79 /* runningState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = runningState.cpp; sourceTree = "<group>"; };
-		49A26DE31BDA6A3100C1FA79 /* runningState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = runningState.h; sourceTree = "<group>"; };
-		49A26DE61BDA6B7700C1FA79 /* arduino.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = arduino.cpp; sourceTree = "<group>"; };
-		49A26DE71BDA6B7700C1FA79 /* arduino.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = arduino.h; sourceTree = "<group>"; };
+		49378BEE1BDE562800418002 /* app.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = app.cpp; sourceTree = "<group>"; };
+		49378BEF1BDE562800418002 /* app.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = app.h; sourceTree = "<group>"; };
+		49378BF01BDE562800418002 /* arduino.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = arduino.cpp; sourceTree = "<group>"; };
+		49378BF11BDE562800418002 /* arduino.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = arduino.h; sourceTree = "<group>"; };
+		49378BF21BDE562800418002 /* assets.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = assets.cpp; sourceTree = "<group>"; };
+		49378BF31BDE562800418002 /* assets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = assets.h; sourceTree = "<group>"; };
+		49378BF41BDE562800418002 /* baseApp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = baseApp.cpp; sourceTree = "<group>"; };
+		49378BF51BDE562800418002 /* baseApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = baseApp.h; sourceTree = "<group>"; };
+		49378BF61BDE562800418002 /* baseAssets.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = baseAssets.cpp; sourceTree = "<group>"; };
+		49378BF71BDE562800418002 /* baseAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = baseAssets.h; sourceTree = "<group>"; };
+		49378BF81BDE562800418002 /* baseState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = baseState.cpp; sourceTree = "<group>"; };
+		49378BF91BDE562800418002 /* baseState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = baseState.h; sourceTree = "<group>"; };
+		49378BFA1BDE562800418002 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		49378BFB1BDE562800418002 /* runningState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = runningState.cpp; sourceTree = "<group>"; };
+		49378BFC1BDE562800418002 /* runningState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = runningState.h; sourceTree = "<group>"; };
+		49378BFD1BDE562800418002 /* singletonAssets.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = singletonAssets.cpp; sourceTree = "<group>"; };
+		49378BFE1BDE562800418002 /* standbyState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = standbyState.cpp; sourceTree = "<group>"; };
+		49378BFF1BDE562800418002 /* standbyState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = standbyState.h; sourceTree = "<group>"; };
+		49378C001BDE562800418002 /* testApp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = testApp.cpp; sourceTree = "<group>"; };
+		49378C011BDE562800418002 /* testApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testApp.h; sourceTree = "<group>"; };
 		BBAB23BE13894E4700AA2426 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = ../../../libs/glut/lib/osx/GLUT.framework; sourceTree = "<group>"; };
 		E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openFrameworksLib.xcodeproj; path = ../../../libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj; sourceTree = SOURCE_ROOT; };
 		E45BE9710E8CC7DD009D7055 /* AGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AGL.framework; path = /System/Library/Frameworks/AGL.framework; sourceTree = "<absolute>"; };
@@ -98,7 +99,6 @@
 		E45BE9790E8CC7DD009D7055 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
 		E45BE97A0E8CC7DD009D7055 /* QuickTime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickTime.framework; path = /System/Library/Frameworks/QuickTime.framework; sourceTree = "<absolute>"; };
 		E4B69B5B0A3A1756003C02F2 /* camel_briefDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = camel_briefDebug.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E4B69E1D0A3A1BDC003C02F2 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
 		E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = "openFrameworks-Info.plist"; sourceTree = "<group>"; };
 		E4C2424410CC5A17004149E2 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		E4C2424510CC5A17004149E2 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
@@ -137,31 +137,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		49A26DD01BDA667B00C1FA79 /* baseFiles */ = {
-			isa = PBXGroup;
-			children = (
-				49A26DD11BDA667B00C1FA79 /* baseApp.cpp */,
-				49A26DD21BDA667B00C1FA79 /* baseApp.h */,
-				49A26DD31BDA667B00C1FA79 /* baseAssets.cpp */,
-				49A26DD41BDA667B00C1FA79 /* baseAssets.h */,
-				49A26DD51BDA667B00C1FA79 /* baseState.cpp */,
-				49A26DD61BDA667B00C1FA79 /* baseState.h */,
-				49A26DD91BDA667B00C1FA79 /* singletonAssets.cpp */,
-			);
-			path = baseFiles;
-			sourceTree = "<group>";
-		};
-		49A26DE91BDA6B9C00C1FA79 /* States */ = {
-			isa = PBXGroup;
-			children = (
-				49A26DC41BDA65AD00C1FA79 /* standbyState.cpp */,
-				49A26DC51BDA65AD00C1FA79 /* standbyState.h */,
-				49A26DE21BDA6A3100C1FA79 /* runningState.cpp */,
-				49A26DE31BDA6A3100C1FA79 /* runningState.h */,
-			);
-			name = States;
-			sourceTree = "<group>";
-		};
 		BB4B014C10F69532006C3DED /* addons */ = {
 			isa = PBXGroup;
 			children = (
@@ -231,17 +206,26 @@
 		E4B69E1C0A3A1BDC003C02F2 /* src */ = {
 			isa = PBXGroup;
 			children = (
-				49A26DD01BDA667B00C1FA79 /* baseFiles */,
-				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
-				00A1BFCBB38848AD0E0C8539 /* testApp.cpp */,
-				2D129AB0F7D46B8DFCEADEDB /* testApp.h */,
-				49A26DE91BDA6B9C00C1FA79 /* States */,
-				49A26DCA1BDA65D700C1FA79 /* app.cpp */,
-				49A26DCB1BDA65D700C1FA79 /* app.h */,
-				49A26DE61BDA6B7700C1FA79 /* arduino.cpp */,
-				49A26DE71BDA6B7700C1FA79 /* arduino.h */,
-				49A26DDA1BDA674F00C1FA79 /* assets.cpp */,
-				49A26DDB1BDA674F00C1FA79 /* assets.h */,
+				49378BEE1BDE562800418002 /* app.cpp */,
+				49378BEF1BDE562800418002 /* app.h */,
+				49378BF01BDE562800418002 /* arduino.cpp */,
+				49378BF11BDE562800418002 /* arduino.h */,
+				49378BF21BDE562800418002 /* assets.cpp */,
+				49378BF31BDE562800418002 /* assets.h */,
+				49378BF41BDE562800418002 /* baseApp.cpp */,
+				49378BF51BDE562800418002 /* baseApp.h */,
+				49378BF61BDE562800418002 /* baseAssets.cpp */,
+				49378BF71BDE562800418002 /* baseAssets.h */,
+				49378BF81BDE562800418002 /* baseState.cpp */,
+				49378BF91BDE562800418002 /* baseState.h */,
+				49378BFA1BDE562800418002 /* main.cpp */,
+				49378BFB1BDE562800418002 /* runningState.cpp */,
+				49378BFC1BDE562800418002 /* runningState.h */,
+				49378BFD1BDE562800418002 /* singletonAssets.cpp */,
+				49378BFE1BDE562800418002 /* standbyState.cpp */,
+				49378BFF1BDE562800418002 /* standbyState.h */,
+				49378C001BDE562800418002 /* testApp.cpp */,
+				49378C011BDE562800418002 /* testApp.h */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
@@ -342,17 +326,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49A26DE11BDA69E800C1FA79 /* baseAssets.cpp in Sources */,
-				49A26DE41BDA6A3100C1FA79 /* runningState.cpp in Sources */,
-				49A26DE01BDA69E500C1FA79 /* singletonAssets.cpp in Sources */,
-				49A26DDF1BDA69C200C1FA79 /* baseApp.cpp in Sources */,
-				49A26DDE1BDA69B400C1FA79 /* baseState.cpp in Sources */,
-				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
-				49A26DCC1BDA65D700C1FA79 /* app.cpp in Sources */,
-				49A26DC61BDA65AD00C1FA79 /* standbyState.cpp in Sources */,
-				29D734F0DDECC8C5978185D7 /* testApp.cpp in Sources */,
-				49A26DE81BDA6B7700C1FA79 /* arduino.cpp in Sources */,
-				49A26DDC1BDA674F00C1FA79 /* assets.cpp in Sources */,
+				49378C051BDE562800418002 /* baseApp.cpp in Sources */,
+				49378C041BDE562800418002 /* assets.cpp in Sources */,
+				49378C071BDE562800418002 /* baseState.cpp in Sources */,
+				49378C0B1BDE562800418002 /* standbyState.cpp in Sources */,
+				49378C0A1BDE562800418002 /* singletonAssets.cpp in Sources */,
+				49378C091BDE562800418002 /* runningState.cpp in Sources */,
+				49378C031BDE562800418002 /* arduino.cpp in Sources */,
+				49378C081BDE562800418002 /* main.cpp in Sources */,
+				49378C0C1BDE562800418002 /* testApp.cpp in Sources */,
+				49378C021BDE562800418002 /* app.cpp in Sources */,
+				49378C061BDE562800418002 /* baseAssets.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

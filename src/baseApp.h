@@ -2,7 +2,7 @@
 #define __baseApp__
 
 #include "ofMain.h"
-#include "BaseState.h"
+#include "baseState.h"
 #include "assets.h"
 
 class BaseApp
