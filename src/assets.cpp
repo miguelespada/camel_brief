@@ -1,6 +1,6 @@
 #include "assets.h"
 
 void Assets::loadAssets(){
-    testSound.loadSound("Claxon.mp3");
+    testSound.loadSound("Skid.wav");
 }
 
