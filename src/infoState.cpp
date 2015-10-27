@@ -14,14 +14,21 @@ void InfoState::draw(){
     ofTranslate(20, 40);
     ofSetColor(255, 0, 0);
     ofTrueTypeFont *font = Assets::getInstance()->getFont(12);
-    app->drawValues();
+    
+    
+    ofSetColor(255, 0, 255);
+    app->player_0.drawValues();
+    
+    ofSetColor(0, 255, 255);
+    app->player_1.drawValues();
+    
+    ofSetColor(255);
+    app->player_1.drawThreshold();
     ofPopMatrix();
 };
 
 void InfoState::update(){
-    if(app->isHit()){
-        cout << "YEAH!" << endl;
-    }
+    
 };
 
 void InfoState::next(){

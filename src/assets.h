@@ -18,6 +18,8 @@ public:
     
     ofVideoPlayer myVideo;
     ofSoundPlayer testSound;
+    
+    int getThreshold();
 };
 
 #endif

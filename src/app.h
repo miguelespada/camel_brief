@@ -2,9 +2,8 @@
 #define __app__
 
 #include "baseApp.h"
+#include "player.h"
 
-#define N 100
-#define THRESHOLD 50
 class App: public BaseApp
 {
     
@@ -15,13 +14,12 @@ public:
     void set(int idx, int v);
     
     void pushButton();
-
-    vector<int> values;
     
-    void drawValues();
-    bool bBallOn;
-    float ballOnTime;
-    bool isHit();
+    void updatePlayers();
+    
+    Player player_0;
+    Player player_1;
+    
 };
 
 
