@@ -3,7 +3,7 @@
 BaseAssets::BaseAssets(){
     string path = ofToDataPath("settings.json");
     ofLogNotice() << "Loading settings from: " << path;
-//    settings.open(path);
+    settings.open(path);
     default_font = "ProximaNova.otf";
     ofTrueTypeFont::setGlobalDpi(72);
     clearFonts();
@@ -29,10 +29,10 @@ void BaseAssets::stopVideos(){
     for(vector<ofVideoPlayer*>::iterator it = videos.begin(); it != videos.end(); ++it)
         (*it)->stop();
 }
-//
-//Json::Value BaseAssets::getData(string key){
-//    return settings[key];
-//}
+
+Json::Value BaseAssets::getData(string key){
+    return settings[key];
+}
 
 int BaseAssets::getLocalPort(){
 //    return getData("local_port").asInt();
@@ -51,11 +51,11 @@ float BaseAssets::getScale(){
 }
 
 int BaseAssets::getWidth(){
-    return 200;
+    return getData("width").asInt();
 }
 
 int BaseAssets::getHeight(){
-    return 200;
+    return getData("height").asInt();
 }
 void BaseAssets::loadFont(int size){
     fonts[size] = new ofTrueTypeFont();

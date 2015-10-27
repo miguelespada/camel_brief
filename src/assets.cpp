@@ -6,5 +6,5 @@ void Assets::loadAssets(){
 
 
 int Assets::getThreshold(){
-    return 200;
+    return getData("threshold").asInt();
 }

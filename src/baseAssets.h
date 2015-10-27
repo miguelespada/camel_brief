@@ -3,6 +3,7 @@
 #define __baseAssets__
 
 #include "ofMain.h"
+#include "ofxJSON.h"
 
 #define MAX_FONT 128
 
@@ -28,11 +29,12 @@ public:
 
     string default_font;
     
+    Json::Value getData(string key);
+    ofxJSONElement settings;
+    
 private:
     vector<ofVideoPlayer*> videos;
     
-//    Json::Value getData(string key);
-//    ofxJSONElement settings;
     
     void clearFonts();
     ofTrueTypeFont		*fonts[MAX_FONT];
