@@ -1,5 +1,5 @@
 #include "infoState.h"
-#include "standByState.h"
+#include "standbyState.h"
 
 InfoState::InfoState(App *a):BaseState(a){
     BaseState::initialize();
