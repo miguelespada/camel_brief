@@ -51,7 +51,7 @@ float BaseAssets::getScale(){
 }
 
 int BaseAssets::getWidth(){
-    return 400;
+    return 200;
 }
 
 int BaseAssets::getHeight(){

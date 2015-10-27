@@ -6,7 +6,7 @@
 void testApp::setup(){
 
 	ofSetVerticalSync(true);
-	//ofSetFrameRate(60);
+	ofSetFrameRate(30);
 
     ofLogNotice() << "Running app";
     

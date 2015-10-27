@@ -19,6 +19,9 @@ class Arduino {
     
     App *app;
     
+    int bButton;
+    float time;
+    
 public:
     Arduino(App *a);
     ~Arduino();
