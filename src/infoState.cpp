@@ -19,6 +19,9 @@ void InfoState::draw(){
 };
 
 void InfoState::update(){
+    if(app->isHit()){
+        cout << "YEAH!" << endl;
+    }
 };
 
 void InfoState::next(){

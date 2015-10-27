@@ -7,6 +7,9 @@ App::App():BaseApp(){
     
     for(vector<int>::iterator it = values.begin(); it != values.end(); ++it)
         (*it) = 0;
+    
+    bBallOn = false;
+    ballOnTime = ofGetElapsedTimeMillis();
 
 }
 
@@ -34,10 +37,28 @@ void App::set(int idx, int v){
         values.push_back(v);
         if(values.size() > N)
             values.erase(values.begin());
+        
+        int last = values[N - 1];
+        int prev = values[N - 2];
+        if(last < THRESHOLD && prev > THRESHOLD){
+            bBallOn = true;
+            ballOnTime = ofGetElapsedTimeMillis();
+        }
+        if(last > THRESHOLD && prev < THRESHOLD){
+            bBallOn = false;
+            
+        }
     }
-    
-    
 }
+
+bool App::isHit(){
+    if(bBallOn && ofGetElapsedTimeMillis() > ballOnTime + 100){
+        bBallOn = false;
+        return true;
+    }
+    return false;
+}
+
 
 void App::pushButton(){
     current_state->start();
@@ -57,6 +78,14 @@ void App::drawValues(){
         ofLine(i, v0, i+1, v1);
         i++;
     }
+    
+    
+    ofTrueTypeFont *font = Assets::getInstance()->getFont(12);
+    font->drawString(ofToString((*values.end())), 0, 0);
+    
+    ofSetColor(255);
+    float t = ofMap(THRESHOLD, 0, 1024, 0, ofGetHeight());
+    ofLine(0, t, ofGetWidth(), t);
     
     ofPopStyle();
 }

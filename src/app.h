@@ -4,6 +4,7 @@
 #include "baseApp.h"
 
 #define N 100
+#define THRESHOLD 50
 class App: public BaseApp
 {
     
@@ -16,7 +17,11 @@ public:
     void pushButton();
 
     vector<int> values;
+    
     void drawValues();
+    bool bBallOn;
+    float ballOnTime;
+    bool isHit();
 };
 
 
