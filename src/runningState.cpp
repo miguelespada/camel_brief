@@ -10,11 +10,7 @@ RunningState::~RunningState(){
 
 void RunningState::draw(){
     ofPushMatrix();
-    ofTranslate(20, 40);
-    ofSetColor(255, 0, 0);
-    ofTrueTypeFont *font = Assets::getInstance()->getFont(12);
-    font->drawString(ofToString(app->value), 0, 0);
-    
+    ofClear(255, 255, 0);
     ofPopMatrix();
 };
 

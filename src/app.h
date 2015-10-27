@@ -3,6 +3,7 @@
 
 #include "baseApp.h"
 
+#define N 100
 class App: public BaseApp
 {
     
@@ -14,8 +15,8 @@ public:
     
     void pushButton();
 
-    int value; 
-    
+    vector<int> values;
+    void drawValues();
 };
 
 

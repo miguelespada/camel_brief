@@ -57,7 +57,7 @@ void Arduino::digitalPinChanged(const int & pinNum) {
     
     if(pinNum == 2){
         int v = ard.getDigital(pinNum);
-        if(bButton == 1 && v == 0 && ofGetElapsedTimeMillis() > time + 500){            
+        if(bButton == 1 && v == 0 && ofGetElapsedTimeMillis() > time + 500){
             app->pushButton();
         }
         time = ofGetElapsedTimeMillis();
