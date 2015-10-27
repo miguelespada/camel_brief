@@ -11,6 +11,8 @@ public:
     ~App(){};
     void keyPressed(int key);
     void set(int idx, int v);
+    
+    void pushButton();
 
     int value; 
     

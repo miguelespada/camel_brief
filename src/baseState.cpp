@@ -16,3 +16,6 @@ BaseState::~BaseState(){
 bool BaseState::isDone(int duration){
     return (ofGetElapsedTimef() - timer) >= duration;
 }
+
+void BaseState::start(){
+}

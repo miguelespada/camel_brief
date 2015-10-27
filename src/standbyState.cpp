@@ -22,3 +22,7 @@ void StandbyState::next(){
     app->setCurrentState(new RunningState(app));
     delete this;
 };
+
+void StandbyState::start(){
+    next();
+}

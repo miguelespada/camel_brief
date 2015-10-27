@@ -22,5 +22,8 @@ void App::keyPressed (int key){
 void App::set(int idx, int v){
     if(idx == 0) value = v;
     
-    
+}
+
+void App::pushButton(){
+    current_state->start();
 }
