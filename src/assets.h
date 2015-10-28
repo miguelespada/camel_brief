@@ -22,6 +22,7 @@ public:
     int getThreshold();
     int getSpeed();
     float getDecay();
+    string getArduino();
 };
 
 #endif

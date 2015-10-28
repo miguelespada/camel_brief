@@ -7,5 +7,6 @@
   "remote_ip" : "192.168.1.50",
   "threshold": 80,
   "speed": 20,
-  "decay": 0.995
+  "decay": 0.995,
+  "arduino": "/dev/ttyACM0"
  }

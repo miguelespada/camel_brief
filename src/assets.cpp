@@ -18,3 +18,8 @@ int Assets::getSpeed(){
 float Assets::getDecay(){
     return getData("decay").asFloat();
 }
+
+
+string Assets::getArduino(){
+    return getData("arduino").asString();
+}

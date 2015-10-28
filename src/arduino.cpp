@@ -1,13 +1,14 @@
 #include "arduino.h"
+#include "assets.h"
 
 #define SHORT_PUSH_TIME 50
 #define LONG_PUSH_TIME 1000
 
 Arduino::Arduino(App *a){
     app = a;
-    
+    ofLogNotice() << "[Arduino of RASP]" << Assets::getInstance()->getArduino();
     #ifdef TARGET_RASPBERRY_PI
-        ard.connect("/dev/ttyACM1", 57600);
+        ard.connect(Assets::getInstance()->getArduino(), 57600);
     #else
         ard.connect("/dev/tty.usbmodem1411", 57600);//57600);
     #endif
