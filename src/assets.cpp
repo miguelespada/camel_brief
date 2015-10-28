@@ -1,7 +1,7 @@
 #include "assets.h"
 
 void Assets::loadAssets(){
-    hitSound.loadSound("Skid.wav");
+    hitSound.loadSound("hit.wav");
 }
 
 int Assets::getThreshold(){

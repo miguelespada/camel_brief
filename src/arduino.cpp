@@ -7,7 +7,7 @@ Arduino::Arduino(App *a){
     app = a;
     
     #ifdef TARGET_RASPBERRY_PI
-        ard.connect("/dev/ttyACM0", 57600);
+        ard.connect("/dev/ttyACM1", 57600);
     #else
         ard.connect("/dev/tty.usbmodem1411", 57600);//57600);
     #endif

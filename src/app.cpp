@@ -34,11 +34,12 @@ void App::keyPressed (int key){
             
         case '1':
             inc = SPEED;
-            if(inc > SPEED) inc = SPEED;
+            Assets::getInstance()->hitSound.play();
             break;
             
         case '2':
             inc = -SPEED;
+            Assets::getInstance()->hitSound.play();
             break;
             
         default:
