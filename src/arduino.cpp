@@ -84,5 +84,8 @@ void Arduino::digitalPinChanged(const int & pinNum) {
 
 //--------------------------------------------------------------
 void Arduino::analogPinChanged(const int & pinNum) {
+    
+    cout << ard.getAnalog(pinNum) << endl;
+    
     app->set(pinNum, ard.getAnalog(pinNum));
  }
