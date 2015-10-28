@@ -17,9 +17,11 @@ public:
     
     
     ofVideoPlayer myVideo;
-    ofSoundPlayer testSound;
+    ofSoundPlayer hitSound;
     
     int getThreshold();
+    int getSpeed();
+    float getDecay();
 };
 
 #endif

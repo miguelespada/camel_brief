@@ -30,9 +30,8 @@ public:
     float ballOnTime;
     bool isHit();
     int threshold;
-    
-    int score;
-    void updateScore();
+
+    ofColor color;
 };
 
 

@@ -1,9 +1,11 @@
 {
-  "width" : 400,
-  "height" : 300,
+  "width" : 1280,
+  "height" : 800,
   "scale" : 1,
   "local_port" : 8001,
   "remote_port" : 8080,
   "remote_ip" : "192.168.1.50",
-  "threshold": 200
+  "threshold": 80,
+  "speed": 20,
+  "decay": 0.995
  }

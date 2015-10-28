@@ -1,12 +1,15 @@
 #include "arduino.h"
 
+#define SHORT_PUSH_TIME 50
+#define LONG_PUSH_TIME 1000
+
 Arduino::Arduino(App *a){
     app = a;
     
     #ifdef TARGET_RASPBERRY_PI
         ard.connect("/dev/ttyACM0", 57600);
     #else
-        ard.connect("tty.usbmodem1451", 57600);//57600);
+        ard.connect("/dev/tty.usbmodem1411", 57600);//57600);
     #endif
     
     // listen for EInitialized notification. this indicates that
@@ -16,8 +19,7 @@ Arduino::Arduino(App *a){
     bSetupArduino	= false;	// flag so we setup arduino when its ready, you don't need to touch this :)
     ofAddListener(ofEvents().update, this, &Arduino::update);
 
-    bButton = 0;
-    time = ofGetElapsedTimeMillis();
+    bButton = 1;
 }
 
 
@@ -57,10 +59,21 @@ void Arduino::digitalPinChanged(const int & pinNum) {
     
     if(pinNum == 2){
         int v = ard.getDigital(pinNum);
-        if(bButton == 1 && v == 0 && ofGetElapsedTimeMillis() > time + 500){
-            app->pushButton();
+        if(bButton == 0 && v == 1){
+            if(ofGetElapsedTimeMillis() > pressedTime + LONG_PUSH_TIME) {
+                cout << "Long push" << endl;
+                app->longPushButton();
+            }
+            else if(ofGetElapsedTimeMillis() > pressedTime + SHORT_PUSH_TIME){
+                cout << "Short push" << endl;
+                app->pushButton();
+            }
         }
-        time = ofGetElapsedTimeMillis();
+        
+        
+        if(bButton == 1 && v == 0){
+            pressedTime = ofGetElapsedTimeMillis();
+        }
         bButton = v;
         
     }

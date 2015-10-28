@@ -1,8 +1,10 @@
 #include "runningState.h"
 #include "standbyState.h"
+#include "winnerState.h"
 
 RunningState::RunningState(App *a):BaseState(a){
     BaseState::initialize();
+    app->reset();
 };
 
 RunningState::~RunningState(){
@@ -10,13 +12,7 @@ RunningState::~RunningState(){
 
 void RunningState::draw(){
     ofPushMatrix();
-    ofClear(255);
-    ofSetColor(255, 0, 0);
-    ofTranslate(20, 20);
-    app->player_0.draw();
-    ofSetColor(0, 255, 0);
-    ofTranslate(0, 100);
-    app->player_1.draw();
+    app->drawScore();
     ofPopMatrix();
 };
 
@@ -25,7 +21,11 @@ void RunningState::update(){
 };
 
 void RunningState::next(){
-    
-    app->setCurrentState(new StandbyState(app));
+    app->setCurrentState(new WinnerState(app));
     delete this;
 };
+
+void RunningState::reset(){
+    app->setCurrentState(new StandbyState(app));
+    delete this;
+}

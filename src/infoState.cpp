@@ -10,6 +10,7 @@ InfoState::~InfoState(){
 
 
 void InfoState::draw(){
+    ofClear(0);
     ofPushMatrix();
     ofTranslate(20, 40);
     ofSetColor(255, 0, 0);
@@ -35,3 +36,8 @@ void InfoState::next(){
     app->setCurrentState(new StandbyState(app));
     delete this;
 };
+
+void InfoState::reset(){
+    app->setCurrentState(new StandbyState(app));
+    delete this;
+}

@@ -21,7 +21,6 @@ Player::Player(){
     ballOnTime = ofGetElapsedTimeMillis();
     
     threshold = Assets::getInstance()->getThreshold();
-    score = 0;
 }
 
 void Player::addValue(int v){
@@ -43,9 +42,9 @@ void Player::addValue(int v){
 
 
 bool Player::isHit(){
-    if(bBallOn && ofGetElapsedTimeMillis() > ballOnTime + 100){
+    if(bBallOn && ofGetElapsedTimeMillis() > ballOnTime + 5){
         bBallOn = false;
-        updateScore();
+        Assets::getInstance()->hitSound.play();
         return true;
     }
     return false;
@@ -76,12 +75,8 @@ void Player::drawLastValue(){
     font->drawString(ofToString((*values.end())), 0, 0);
 }
 
-void Player::updateScore(){
-    score += 1;
-}
 
 void Player::draw(){
-    ofTrueTypeFont *font = Assets::getInstance()->getFont(30);
-    font->drawString(ofToString(score), 0, 0);
+
     
 }

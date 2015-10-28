@@ -14,12 +14,20 @@ public:
     void set(int idx, int v);
     
     void pushButton();
+    void longPushButton();
     
     void updatePlayers();
-    
+    void drawScore();
+    void drawWiinner();
+
     Player player_0;
     Player player_1;
     
+    float score;
+    float inc;
+    void reset();
+    int SPEED;
+    float DECAY;
 };
 
 

@@ -20,7 +20,7 @@ class Arduino {
     App *app;
     
     int bButton;
-    float time;
+    float pressedTime;
     
 public:
     Arduino(App *a);

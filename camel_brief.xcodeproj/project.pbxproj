@@ -11,6 +11,7 @@
 		29D734F0DDECC8C5978185D7 /* testApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00A1BFCBB38848AD0E0C8539 /* testApp.cpp */; };
 		3246D65B10177614770142F6 /* infoState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D7343F452D60AB884984155 /* infoState.cpp */; };
 		39C89FCC977D16B15BF7BDFE /* baseAssets.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6E51E3D05CA81B27F4B91319 /* baseAssets.cpp */; };
+		498889561BE0E187007B29C8 /* winnerState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 498889541BE0E187007B29C8 /* winnerState.cpp */; };
 		49AA5C5F5D4C471218D5B0E3 /* baseState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EAF0215F3CB3EEA2F412080 /* baseState.cpp */; };
 		49B67B851BDF9E1B0043CA4A /* app.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49B67B831BDF9E1B0043CA4A /* app.cpp */; };
 		79F76218DACB7B009EABAB5F /* baseApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F44E9EE2EF6349BD0861BC7 /* baseApp.cpp */; };
@@ -85,6 +86,8 @@
 		2D129AB0F7D46B8DFCEADEDB /* testApp.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = testApp.h; path = src/testApp.h; sourceTree = SOURCE_ROOT; };
 		2D7343F452D60AB884984155 /* infoState.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = infoState.cpp; path = src/infoState.cpp; sourceTree = SOURCE_ROOT; };
 		47EADD74A00E26E8E1291F2A /* baseApp.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = baseApp.h; path = src/baseApp.h; sourceTree = SOURCE_ROOT; };
+		498889541BE0E187007B29C8 /* winnerState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = winnerState.cpp; sourceTree = "<group>"; };
+		498889551BE0E187007B29C8 /* winnerState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = winnerState.h; sourceTree = "<group>"; };
 		49B67B831BDF9E1B0043CA4A /* app.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = app.cpp; sourceTree = "<group>"; };
 		49B67B841BDF9E1B0043CA4A /* app.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = app.h; sourceTree = "<group>"; };
 		4B948DEC4411B26F3C9BE5DE /* assets.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = assets.cpp; path = src/assets.cpp; sourceTree = SOURCE_ROOT; };
@@ -296,6 +299,8 @@
 				B506690DF10DC1631E2DE5CC /* singletonAssets.cpp */,
 				4E7BF751B700727A3ED7D7C0 /* standbyState.cpp */,
 				E98E05C10BCDA4C68BBAF442 /* standbyState.h */,
+				498889541BE0E187007B29C8 /* winnerState.cpp */,
+				498889551BE0E187007B29C8 /* winnerState.h */,
 				00A1BFCBB38848AD0E0C8539 /* testApp.cpp */,
 				2D129AB0F7D46B8DFCEADEDB /* testApp.h */,
 			);
@@ -410,6 +415,7 @@
 				D2842FB13BB46E2C884AEA97 /* arduino.cpp in Sources */,
 				0ECECEAA015468B5A8B3B9F1 /* assets.cpp in Sources */,
 				49B67B851BDF9E1B0043CA4A /* app.cpp in Sources */,
+				498889561BE0E187007B29C8 /* winnerState.cpp in Sources */,
 				79F76218DACB7B009EABAB5F /* baseApp.cpp in Sources */,
 				39C89FCC977D16B15BF7BDFE /* baseAssets.cpp in Sources */,
 				49AA5C5F5D4C471218D5B0E3 /* baseState.cpp in Sources */,

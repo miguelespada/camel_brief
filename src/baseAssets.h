@@ -5,7 +5,7 @@
 #include "ofMain.h"
 #include "ofxJSON.h"
 
-#define MAX_FONT 128
+#define MAX_FONT 400
 
 class BaseAssets{
 public:

@@ -4,7 +4,7 @@ BaseAssets::BaseAssets(){
     string path = ofToDataPath("settings.json");
     ofLogNotice() << "Loading settings from: " << path;
     settings.open(path);
-    default_font = "ProximaNova.otf";
+    default_font = "Lato-Bold.ttf";
     ofTrueTypeFont::setGlobalDpi(72);
     clearFonts();
 }

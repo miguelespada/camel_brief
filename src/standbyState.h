@@ -16,6 +16,11 @@ public:
     void draw();
     void next();
     void start();
+    void reset();
+    int r;
+    int state;
+    int x,y;
+    void resetCircle();
 };
 
 #endif

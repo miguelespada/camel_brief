@@ -14,6 +14,7 @@ void testApp::setup(){
     app.setCurrentState(new StandbyState(&app));
     
     arduino = new Arduino(&app);
+    ofHideCursor();
 }
 
 //--------------------------------------------------------------
@@ -23,8 +24,6 @@ void testApp::update(){
 
 //--------------------------------------------------------------
 void testApp::draw(){
-    
-    ofClear(0);
     app.draw();
 }
 
