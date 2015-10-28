@@ -56,7 +56,7 @@ void Arduino::setupArduino(const int & version) {
 
 //--------------------------------------------------------------
 void Arduino::digitalPinChanged(const int & pinNum) {
-    
+    cout << ard.getDigital(pinNum) << endl;
     if(pinNum == 2){
         int v = ard.getDigital(pinNum);
         if(bButton == 0 && v == 1){
