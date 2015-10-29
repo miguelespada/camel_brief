@@ -13,6 +13,8 @@ void WinnerState::draw(){
 };
 
 void WinnerState::update(){
+    if(isDone(5))
+        next();
 };
 
 void WinnerState::next(){

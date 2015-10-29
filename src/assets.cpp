@@ -2,6 +2,8 @@
 
 void Assets::loadAssets(){
     hitSound.loadSound("hit.wav");
+    introSound.loadSound("intro.wav");
+    sound.loadSound("0.wav");
 }
 
 int Assets::getThreshold(){

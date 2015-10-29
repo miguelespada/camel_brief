@@ -15,6 +15,7 @@ void testApp::setup(){
     
     arduino = new Arduino(&app);
     ofHideCursor();
+    ofSetFullscreen(true);
 }
 
 //--------------------------------------------------------------
@@ -29,7 +30,15 @@ void testApp::draw(){
 
 //--------------------------------------------------------------
 void testApp::keyPressed  (int key){
-
+    switch (key) {
+        case 'f':
+            setFullScreen(true);
+            break;
+        case 'F':
+            setFullScreen(false);
+            break;
+            
+    }
 }
 
 //--------------------------------------------------------------
@@ -69,4 +78,17 @@ void testApp::gotMessage(ofMessage msg){
 //--------------------------------------------------------------
 void testApp::dragEvent(ofDragInfo dragInfo){
 
+}
+
+void testApp::setFullScreen(bool bFull){
+    if(bFull){
+        ofSetFullscreen(true);
+        ofSetWindowPosition(1440, 0);
+        ofHideCursor();
+    }
+    else{
+        ofSetFullscreen(false);
+        ofSetWindowPosition(0, 0);
+    }
+    
 }

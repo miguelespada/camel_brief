@@ -18,6 +18,8 @@ public:
     
     ofVideoPlayer myVideo;
     ofSoundPlayer hitSound;
+    ofSoundPlayer introSound;
+    ofSoundPlayer sound;
     
     int getThreshold();
     int getSpeed();

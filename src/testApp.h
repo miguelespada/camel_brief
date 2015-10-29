@@ -28,6 +28,8 @@ public:
     
     App app;
     Arduino *arduino;
+    bool bFull = false;
+    void setFullScreen(bool bFull);
 
     
 };

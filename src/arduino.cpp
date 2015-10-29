@@ -10,7 +10,7 @@ Arduino::Arduino(App *a){
     #ifdef TARGET_RASPBERRY_PI
         ard.connect(Assets::getInstance()->getArduino(), 57600);
     #else
-        ard.connect("/dev/tty.usbmodem1411", 57600);//57600);
+        ard.connect("/dev/tty.usbmodem1451", 57600);//57600);
     #endif
     
     // listen for EInitialized notification. this indicates that
@@ -57,7 +57,6 @@ void Arduino::setupArduino(const int & version) {
 
 //--------------------------------------------------------------
 void Arduino::digitalPinChanged(const int & pinNum) {
-    cout << ard.getDigital(pinNum) << endl;
     if(pinNum == 2){
         int v = ard.getDigital(pinNum);
         if(bButton == 0 && v == 1){
@@ -84,8 +83,5 @@ void Arduino::digitalPinChanged(const int & pinNum) {
 
 //--------------------------------------------------------------
 void Arduino::analogPinChanged(const int & pinNum) {
-    
-    cout << ard.getAnalog(pinNum) << endl;
-    
     app->set(pinNum, ard.getAnalog(pinNum));
  }
